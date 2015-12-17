@@ -6,10 +6,12 @@
 //  Copyright © 2015 KhiemND. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
+@class DynamicView;
 @interface ViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UITextField *productTypeTextfield;
+@property (nonatomic, weak) IBOutlet DynamicView *dynamicView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *heightDynamicView;
 
 @end
 

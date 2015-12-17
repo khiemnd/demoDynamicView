@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NRn-Cg-Z4O">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -16,12 +16,92 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loại sản phẩm:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wp-B9-qJ3">
+                                <rect key="frame" x="8" y="20" width="304" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0z1-R3-i3m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loại danh mục:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lY0-Sr-oV1">
+                                <rect key="frame" x="8" y="177" width="304" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WKx-83-27u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chọn ngành hàng" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N86-Ev-twH">
+                                <rect key="frame" x="8" y="58" width="304" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XmE-SF-crg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Mxz-Kk-3V7"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohi-95-t4k" customClass="DynamicView">
+                                <rect key="frame" x="8" y="88" width="304" height="89"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="9Ze-SU-gqJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N86-Ev-twH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Bhg-e6-ggz"/>
+                            <constraint firstAttribute="trailing" secondItem="lY0-Sr-oV1" secondAttribute="trailing" constant="8" id="GVM-fL-5Zf"/>
+                            <constraint firstItem="9Wp-B9-qJ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jrz-6y-aIV"/>
+                            <constraint firstItem="9Wp-B9-qJ3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MLs-QB-Lom"/>
+                            <constraint firstItem="ohi-95-t4k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PKN-CS-7oi"/>
+                            <constraint firstAttribute="trailing" secondItem="ohi-95-t4k" secondAttribute="trailing" constant="8" id="Wm9-22-Iln"/>
+                            <constraint firstItem="9Wp-B9-qJ3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="XcS-dU-8sV"/>
+                            <constraint firstItem="N86-Ev-twH" firstAttribute="top" secondItem="9Wp-B9-qJ3" secondAttribute="bottom" constant="17" id="bkT-yH-DO0"/>
+                            <constraint firstItem="ohi-95-t4k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="d2j-Zv-cGM"/>
+                            <constraint firstItem="lY0-Sr-oV1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="hmA-AK-aLw"/>
+                            <constraint firstAttribute="trailing" secondItem="N86-Ev-twH" secondAttribute="trailing" constant="8" id="iYf-xO-wJc"/>
+                            <constraint firstItem="lY0-Sr-oV1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jAE-qr-NMD"/>
+                            <constraint firstItem="lY0-Sr-oV1" firstAttribute="top" secondItem="ohi-95-t4k" secondAttribute="bottom" id="kVf-WH-tAA"/>
+                            <constraint firstAttribute="trailing" secondItem="9Wp-B9-qJ3" secondAttribute="trailing" constant="8" id="nGR-9k-9Oq"/>
+                            <constraint firstItem="ohi-95-t4k" firstAttribute="top" secondItem="N86-Ev-twH" secondAttribute="bottom" id="rtT-dr-JRG"/>
+                            <constraint firstItem="N86-Ev-twH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sGM-wo-4uQ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Bbf-eM-IKy"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="dynamicView" destination="ohi-95-t4k" id="mTq-2v-QTy"/>
+                        <outlet property="heightDynamicView" destination="9Ze-SU-gqJ" id="g3f-5C-Tl7"/>
+                        <outlet property="productTypeTextfield" destination="N86-Ev-twH" id="iCM-ei-rCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="713" y="945"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MgQ-ht-5zg">
+            <objects>
+                <navigationController id="NRn-Cg-Z4O" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lc8-SS-zlm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SBR-pi-n4W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4E6-bw-bUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="274"/>
         </scene>
     </scenes>
 </document>

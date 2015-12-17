@@ -14,6 +14,11 @@
 		D236D8D31C212165008110E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D236D8D11C212165008110E3 /* Main.storyboard */; };
 		D236D8D51C212165008110E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D236D8D41C212165008110E3 /* Assets.xcassets */; };
 		D236D8D81C212165008110E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D236D8D61C212165008110E3 /* LaunchScreen.storyboard */; };
+		D236D8E11C218661008110E3 /* DynamicView.m in Sources */ = {isa = PBXBuildFile; fileRef = D236D8E01C218661008110E3 /* DynamicView.m */; };
+		D236D8E41C218AA2008110E3 /* TypeProductEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D236D8E31C218AA2008110E3 /* TypeProductEntity.m */; };
+		D236D8E71C218B90008110E3 /* ControlEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D236D8E61C218B90008110E3 /* ControlEntity.m */; };
+		D236D8F41C2190AA008110E3 /* ParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D236D8F31C2190AA008110E3 /* ParseManager.m */; };
+		D236D8FC1C219588008110E3 /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D236D8FB1C219588008110E3 /* NSDictionary+JSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,18 @@
 		D236D8D41C212165008110E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D236D8D71C212165008110E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D236D8D91C212165008110E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D236D8DF1C218661008110E3 /* DynamicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicView.h; sourceTree = "<group>"; };
+		D236D8E01C218661008110E3 /* DynamicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicView.m; sourceTree = "<group>"; };
+		D236D8E21C218AA2008110E3 /* TypeProductEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeProductEntity.h; sourceTree = "<group>"; };
+		D236D8E31C218AA2008110E3 /* TypeProductEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeProductEntity.m; sourceTree = "<group>"; };
+		D236D8E51C218B90008110E3 /* ControlEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlEntity.h; sourceTree = "<group>"; };
+		D236D8E61C218B90008110E3 /* ControlEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlEntity.m; sourceTree = "<group>"; };
+		D236D8E81C218F25008110E3 /* demoDynamicViewPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demoDynamicViewPrefixHeader.pch; sourceTree = "<group>"; };
+		D236D8F21C2190AA008110E3 /* ParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseManager.h; sourceTree = "<group>"; };
+		D236D8F31C2190AA008110E3 /* ParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseManager.m; sourceTree = "<group>"; };
+		D236D8F81C2191DD008110E3 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		D236D8FA1C219588008110E3 /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		D236D8FB1C219588008110E3 /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
 		D2756C1735389101FA64FC1B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +99,7 @@
 		D236D8C71C212165008110E3 /* demoDynamicView */ = {
 			isa = PBXGroup;
 			children = (
+				D236D8F91C219588008110E3 /* Utilities */,
 				D236D8CB1C212165008110E3 /* AppDelegate.h */,
 				D236D8CC1C212165008110E3 /* AppDelegate.m */,
 				D236D8CE1C212165008110E3 /* ViewController.h */,
@@ -91,6 +109,14 @@
 				D236D8D61C212165008110E3 /* LaunchScreen.storyboard */,
 				D236D8D91C212165008110E3 /* Info.plist */,
 				D236D8C81C212165008110E3 /* Supporting Files */,
+				D236D8DF1C218661008110E3 /* DynamicView.h */,
+				D236D8E01C218661008110E3 /* DynamicView.m */,
+				D236D8E21C218AA2008110E3 /* TypeProductEntity.h */,
+				D236D8E31C218AA2008110E3 /* TypeProductEntity.m */,
+				D236D8E51C218B90008110E3 /* ControlEntity.h */,
+				D236D8E61C218B90008110E3 /* ControlEntity.m */,
+				D236D8F21C2190AA008110E3 /* ParseManager.h */,
+				D236D8F31C2190AA008110E3 /* ParseManager.m */,
 			);
 			path = demoDynamicView;
 			sourceTree = "<group>";
@@ -99,8 +125,19 @@
 			isa = PBXGroup;
 			children = (
 				D236D8C91C212165008110E3 /* main.m */,
+				D236D8E81C218F25008110E3 /* demoDynamicViewPrefixHeader.pch */,
+				D236D8F81C2191DD008110E3 /* Defines.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D236D8F91C219588008110E3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D236D8FA1C219588008110E3 /* NSDictionary+JSON.h */,
+				D236D8FB1C219588008110E3 /* NSDictionary+JSON.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +261,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D236D8E71C218B90008110E3 /* ControlEntity.m in Sources */,
+				D236D8E11C218661008110E3 /* DynamicView.m in Sources */,
+				D236D8FC1C219588008110E3 /* NSDictionary+JSON.m in Sources */,
 				D236D8D01C212165008110E3 /* ViewController.m in Sources */,
 				D236D8CD1C212165008110E3 /* AppDelegate.m in Sources */,
 				D236D8CA1C212165008110E3 /* main.m in Sources */,
+				D236D8E41C218AA2008110E3 /* TypeProductEntity.m in Sources */,
+				D236D8F41C2190AA008110E3 /* ParseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +379,7 @@
 			baseConfigurationReference = D2756C1735389101FA64FC1B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/demoDynamicView/demoDynamicViewPrefixHeader.pch";
 				INFOPLIST_FILE = demoDynamicView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vngcorp.g2.wad.demoDynamicView;
@@ -349,6 +392,7 @@
 			baseConfigurationReference = 7810E430FCB52089F731AD66 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/demoDynamicView/demoDynamicViewPrefixHeader.pch";
 				INFOPLIST_FILE = demoDynamicView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vngcorp.g2.wad.demoDynamicView;
